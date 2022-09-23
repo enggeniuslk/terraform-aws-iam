@@ -1,0 +1,4 @@
+---
+policy_arns:
+  - arn:aws:iam::aws:policy/AWSHealthFullAccess
+  - arn:aws:iam::aws:policy/AmazonS3FullAccess
