@@ -1,5 +1,5 @@
 module "example" {
-    source = "../"
+    source = "../../"
     data_path = "./data"
 
     tags={}

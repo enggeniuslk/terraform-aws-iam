@@ -9,10 +9,11 @@ resource "aws_iam_policy" "policy" {
   description = each.key
 
   policy = file("${local.policies_path}/${each.value}")
+  tags = var.tags
 }
 
 output "policy_arns" {
   value = {
-    for name, policy_obj in aws_iam_policy.policies: name => policy_obj.arn
+    for name, policy_obj in aws_iam_policy.policy: name => policy_obj.arn
   }
 }
