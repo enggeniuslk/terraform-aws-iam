@@ -1,4 +1,4 @@
-module "test" {
+module "example" {
     source = "../"
     data_path = "./data"
 
@@ -6,5 +6,5 @@ module "test" {
 }
 
 output "debug" {
-  value = module.test.debug[*]
+  value = module.example.policy_arns
 }
