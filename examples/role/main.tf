@@ -1,10 +1,10 @@
 module "example" {
   source    = "../../"
-  data_path = "./data"
+  data_path = "./test/data"
 
   tags = {}
 }
 
 output "debug" {
-  value = module.example.policy_arns
+  value = module.example.role_arns
 }
